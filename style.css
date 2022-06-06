@@ -34,10 +34,6 @@ img {
   display: block;
 }
 
-a {
-  text-decoration: none;
-}
-
 ul {
   list-style: none;
   margin: 0rem;
@@ -69,18 +65,23 @@ p {
   justify-content: center;
 }
 
-.menu a {
+.menu button {
+  font-weight: 600;
   display: block;
   background: var(--fundo-2);
+  box-shadow: var(--cor-primaria) 4px 4px 0;
+  transition: transform 200ms, box-shadow 200ms;
   padding: 15px 30px;
   border-radius: 4px;
   color: var(--texto);
   text-transform: uppercase;
   border: 2px solid var(--fundo-2);
+  cursor: pointer;
 }
 
-.menu a:hover {
-  border-color: var(--cor-primaria);
+button:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: var(--cor-primaria) 0 0 0;
 }
 
 .conteudo {
@@ -120,15 +121,22 @@ p {
 }
 
 .botao {
+  font-weight: 600;
+  display: block;
   background: var(--cor-primaria);
-  color: #ffffff;
+  box-shadow: var(--texto) 4px 4px 0;
+  transition: transform 200ms, box-shadow 200ms;
   padding: 15px 30px;
   border-radius: 4px;
+  color: var(--texto);
   text-transform: uppercase;
+  border: 2px solid var(--cor-primaria);
+  cursor: pointer;
 }
 
-.botao:hover {
-  background: var(--cor-primaria-escura);
+.botao:active {
+  transform: translateY(4px) translateX(4px);
+  box-shadow: var(--texto) 0 0 0;
 }
 
 .subtitulo {
